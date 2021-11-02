@@ -1,0 +1,41 @@
+@use '../../styles/abstracts' as *;
+
+.cart {
+	min-height: 75vh;
+
+	.headings {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		border-bottom: 1px solid black;
+		margin: 3rem 0;
+		font-size: $p-md;
+
+		p {
+			width: 20%;
+		}
+	}
+
+	.product {
+		display: flex;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		p {
+			width: 20%;
+			font-size: $p-md;
+		}
+	}
+
+	.checkout {
+		font-size: $p-xl;
+		width: 100%;
+		margin-top: 5rem;
+		display: flex;
+		justify-content: space-around;
+
+		a {
+			color: $primary-cyan;
+		}
+	}
+}

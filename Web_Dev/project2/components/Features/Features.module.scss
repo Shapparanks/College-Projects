@@ -1,0 +1,26 @@
+@use '../../styles/abstracts' as *;
+
+.features {
+	background-color: $primary-violet;
+	color: $white;
+	padding: 5rem 0;
+
+	.flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.heading {
+		font-size: $heading-md;
+		padding-bottom: 3rem;
+	}
+
+	.videoContainer {
+		width: 75%;
+
+		video {
+			width: 100%;
+		}
+	}
+}

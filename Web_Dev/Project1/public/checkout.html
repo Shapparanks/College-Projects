@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='./css/base/reset.css' />
+  <link rel='stylesheet' type='text/css' href='./css/base/utils.css' />
+  <link rel='stylesheet' type='text/css' href='./css/base/base.css' />
+  <link rel='stylesheet' type='text/css' href='./css/pages/checkout.css' />
+  <title>CDY | Home</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container nav__flex">
+      <div class="nav__logo-container">
+        <a href="index.html">
+          <img src="./assets/Logo-CDY.svg" alt="logo">
+        </a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="products.html">Products</a></li>
+        <li class="nav__item"><a href="delivery.html">Delivery</a></li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="login.html">Login</a></li>
+        <li class="nav__item"><a href="#">Sign up</a></li>
+        <li class="nav__item"><a href="checkout.html">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id=summary>
+  <h2>Order Summary</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <!-- We can use JavaScript here to insert a table row for each item in the cart -->
+      <tr>
+        <th>Placeholder</th>
+        <th>$5.00</th>
+        <th>2</th>
+      </tr>
+    </table>
+  <h3>Total: $10.00</h3>
+</div>
+  <!-- We'll also have to update the total dynamically -->
+  <div id="payment">
+  <h2>Payment</h2>
+    <label for="cardnumber">Card Number: </label>
+    <input type="text" name="cardnumber"> <br/>
+    <label for="cardname">Name on Card: </label>
+    <input type="text" name="cardname"> <br/>
+    <label for="security">Security Code: </label>
+    <input type="text" name="security"> <br/>
+    <label for="zip">Zip Code: </label>
+    <input type=text name="zip"> <br/>
+    <input type="submit" value="Submit">
+  </div>
+	
+	  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__flex">
+      <div class="footer__logo">
+        <img src="./assets/Logo-CDY-white.svg" alt="logo-white">
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">Get to Know Us</li>
+        <li class="footer__item"><a href="#">About Us</a></li>
+        <li class="footer__item"><a href="#">Careers</a></li>
+        <li class="footer__item"><a href="#">Read our Blog</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">Shopper Help</li>
+        <li class="footer__item"><a href="#">Account Details</a></li>
+        <li class="footer__item"><a href="#">Order History</a></li>
+        <li class="footer__item"><a href="#">Contact</a></li>
+        <li class="footer__item"><a href="#">Help</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">Doing Business</li>
+        <li class="footer__item"><a href="#">Become a Driver</a></li>
+        <li class="footer__item"><a href="#">Be a Partner Store</a></li>
+        <li class="footer__item"><a href="#">Partner Programs</a></li>
+      </ul>
+    </div>
+    <p class="footer__signature container mt-2 ">	Copyright &copy; 2021, CMPT-330, Straight Off the Couch</p>
+  </footer>
+</body>
+</html>

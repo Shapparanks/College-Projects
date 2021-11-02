@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--Links to CSS sheets as well as title of website-->
+<head>
+
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' type='text/css' href='./css/base/reset.css' />
+  <link rel='stylesheet' type='text/css' href='./css/base/utils.css' />
+  <link rel='stylesheet' type='text/css' href='./css/base/base.css' />
+  <link rel='stylesheet' type='text/css' href='./css/pages/login.css' />
+  
+  
+  <title>CDY | Login</title>
+
+  <!--Incorporate logo into login page-->
+</head>
+
+<body>
+
+    <!-- Website Logo -->
+    <div class="LogoContent">
+      <img src='./assets/CDY_Logo.png' href= 'index.html' alt='CDY_Logo' class='Logo'/><br><br>
+    </div>
+
+    <h1>Sign-In</h1>
+
+    <!-- Class for CSS Modifications -->
+    <div class='LoginPageEP'>
+        <!-- Email/Phone field -->
+        <input type='text' placeholder='Enter email/phone number' name='EmailPhone' required><br><br>
+  
+        <!-- Password field -->
+        <input type='password' id='Pswd' name='InputPassword' placeholder='Enter password' required><br>
+        
+        <!-- Forgot password link -->
+        <div class = 'forgot'>
+          <a href='#'> Forget your password?</a>
+        </div>
+
+        <!-- Show or Hide User Password -->
+          <div class = 'Check'>
+            <input type='checkbox' onclick='ToggleVisibility()'>Show Password <br><br>
+          </div>
+
+      <!-- Login Button that is a clickable element-->
+      <button type='submit' name='Login'>Login</button><br><br> 
+      
+      <!-- Keep Me Signed in Checkbox-->
+       <div class='KeepMe'>
+        <input type='checkbox' name='Keep Me Signed In'> <span>Keep me signed in</span> 
+
+      </div>
+      <!-- Show/Hide User's Password Javascript -->
+  <script>
+    function ToggleVisibility() {
+      var pv = document.getElementById('Pswd');
+              
+        if(pv.type === 'password') {
+          pv.type='text'; }
+        else{
+          pv.type = 'password'; }
+      }
+    </script>
+
+    <!--NOTE: I WAS PLANNING ON IMPLEMENTING AN EYE ICON TO ENABLE SEEING YOUR PASSWORD, BUT UNFORTUATNLY
+              I COULDN'T QUITE FIGURE OUT HOW TO DO THAT. THAT ADDITON WILL BE COMING IN THE LATER PROJECT
+              VERSIONS. 
+    -->
+
+</body>
+</html>

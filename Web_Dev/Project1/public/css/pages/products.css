@@ -1,0 +1,116 @@
+/* All styles for products page */
+
+button {
+    color: white;
+    font-size: 30pt;
+    margin-bottom: auto;
+}
+
+a:link, a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+a:active {
+    color: black;
+}
+
+/* Navbar */
+.nav {
+	height: 7rem;
+}
+
+.nav__logo-container {
+	margin-right: 1rem;
+	font-size: 1.3rem;
+	height: 3rem;
+}
+
+.nav__logo-container img {
+	height: 100%;
+}
+
+.nav__flex {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+}
+
+.nav__list:last-child {
+	margin-left: auto;
+}
+
+.nav__item {
+	margin-left: 3rem;
+}
+
+.nav__item a {
+	text-decoration: none;
+	color: #888;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.nav__item a:hover {
+	color: var(--secondary-blue);
+}
+
+
+/* Footer */
+.footer {
+	min-height: 30rem;
+	background-color: var(--black);
+	clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+	margin-top: 40rem;
+	padding-top: 10rem;
+}
+
+.footer__flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.footer__logo {
+	height: 3rem;
+}
+
+.footer__logo img {
+	height: 100%;
+}
+
+.footer__list {
+	display: flex;
+	flex-flow: column;
+}
+
+.footer__item {
+	margin-bottom: 1rem;
+	color: var(--white);
+	font-size: var(--p-md);
+	font-weight: 600;
+}
+
+.footer__item a {
+	text-decoration: none;
+	color: var(--gray-light);
+	font-size: var(--p-sm);
+	font-weight: 400;
+}
+
+.footer__item a:hover {
+	color: var(--primary-coral);
+}
+
+.footer__signature {
+	font-size: var(--p-xs);
+	color: var(--white);
+	text-align: center;
+}

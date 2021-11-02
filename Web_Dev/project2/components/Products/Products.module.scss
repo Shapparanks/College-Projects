@@ -1,0 +1,19 @@
+@use '../../styles/abstracts' as *;
+
+.products {
+	min-height: 80vh;
+	padding: 3rem;
+
+	.heading {
+		padding: 3rem 0;
+		font-size: $heading-lg;
+	}
+
+	.listing {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+	}
+}

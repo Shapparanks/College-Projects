@@ -1,0 +1,31 @@
+@use '../../styles/abstracts' as *;
+
+.services {
+	background-color: $background-gray;
+
+	.cardContainer {
+		width: 100%;
+		padding: 10rem 0;
+		padding-bottom: 15rem;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@include for-tablet-up {
+			flex-flow: row nowrap;
+		}
+
+		.divider {
+			width: 1rem;
+			height: 8rem;
+			flex: 1 0 auto;
+			background-color: $primary-cyan;
+
+			@include for-tablet-up {
+				height: 5px;
+				min-width: 1rem;
+			}
+		}
+	}
+}

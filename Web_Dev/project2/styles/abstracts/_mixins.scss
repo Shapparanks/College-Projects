@@ -1,0 +1,33 @@
+@use './breakpoints';
+
+// Media Query Mixins
+
+@mixin for-mobile-only {
+	@media screen and (max-width: breakpoints.$mobile) {
+		@content;
+	}
+}
+
+@mixin for-tablet-up {
+	@media screen and (min-width: breakpoints.$tablet) {
+		@content;
+	}
+}
+
+@mixin for-tablet-l-up {
+	@media screen and (min-width: breakpoints.$tablet-l) {
+		@content;
+	}
+}
+
+@mixin for-laptop-up {
+	@media screen and (min-width: breakpoints.$laptop) {
+		@content;
+	}
+}
+
+@mixin for-desktop-up {
+	@media screen and (min-width: breakpoints.$desktop) {
+		@content;
+	}
+}

@@ -1,0 +1,97 @@
+@use '../../styles/abstracts' as *;
+
+.footer {
+	background-color: $dark-violet;
+	color: $white;
+	padding: 5rem 0 1rem 0;
+	text-align: center;
+
+	@include for-tablet-up {
+		text-align: left;
+	}
+
+	.logo {
+		width: 15rem;
+		margin-bottom: 3rem;
+
+		p {
+			font-size: 2.8rem;
+			color: $white;
+		}
+	}
+
+	.flex {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		@include for-tablet-up {
+			align-items: flex-start;
+			justify-content: space-between;
+			flex-flow: row nowrap;
+		}
+	}
+
+	.linkContainer {
+		width: 50%;
+		display: flex;
+		flex-flow: column nowrap;
+
+		@include for-tablet-up {
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+	}
+
+	.group {
+		display: flex;
+		flex-flow: column nowrap;
+
+		a {
+			font-size: $p-md;
+			color: $gray-violet;
+			margin-bottom: 1rem;
+
+			&:nth-child(1) {
+				margin-bottom: 1.5rem;
+				color: $white;
+			}
+
+			&:nth-last-child(1) {
+				margin-bottom: 2rem;
+			}
+
+			&:hover {
+				color: $primary-cyan;
+			}
+		}
+	}
+
+	.social {
+		width: 15rem;
+		height: 2.4rem;
+		margin: 1rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include for-tablet-up {
+			margin: 0;
+		}
+
+		svg {
+			fill: $white;
+
+			&:hover {
+				cursor: pointer;
+				fill: $primary-cyan;
+			}
+		}
+	}
+
+	.signature {
+		margin-top: 2rem;
+		text-align: center;
+		font-size: $p-md;
+	}
+}

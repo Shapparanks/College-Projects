@@ -1,0 +1,19 @@
+.container {
+	width: 100%;
+	max-width: 124rem;
+	padding: 0 3rem;
+	margin: 0 auto;
+}
+
+.flex-row {
+	display: flex;
+	height: 100%;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

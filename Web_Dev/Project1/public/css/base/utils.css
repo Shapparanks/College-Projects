@@ -1,0 +1,115 @@
+/* Utility classes to use throughout project */
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 114rem;
+	padding: 0 3rem;
+	margin: 0 auto;
+}
+
+/* Padding */
+
+/* top and bottom  */
+.py-1 {
+	padding: 1rem 0;
+}
+.py-2 {
+	padding: 2rem 0;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+.py-4 {
+	padding: 4rem 0;
+}
+.py-5 {
+	padding: 5rem 0;
+}
+
+/* left and right */
+.px-1 {
+	padding: 0 1rem;
+}
+.px-2 {
+	padding: 0 2rem;
+}
+.px-3 {
+	padding: 0 3rem;
+}
+.px-4 {
+	padding: 0 4rem;
+}
+.px-5 {
+	padding: 0 5rem;
+}
+
+/* all around */
+.p-1 {
+	padding: 1rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+.p-3 {
+	padding: 3rem;
+}
+.p-4 {
+	padding: 4rem;
+}
+.p-5 {
+	padding: 5rem;
+}
+
+/* Margin */
+
+/* top and bottom */
+.my-1 {
+	margin: 1rem 0;
+}
+.my-2 {
+	margin: 2rem 0;
+}
+.my-3 {
+	margin: 3rem 0;
+}
+.my-4 {
+	margin: 4rem 0;
+}
+.my-5 {
+	margin: 5rem 0;
+}
+
+/* top only */
+.mt-1 {
+	margin-top: 1rem;
+}
+.mt-2 {
+	margin-top: 2rem;
+}
+.mt-3 {
+	margin-top: 3rem;
+}
+.mt-4 {
+	margin-top: 4rem;
+}
+.mt-5 {
+	margin-top: 5rem;
+}
+
+/* bottom only */
+.mb-1 {
+	margin-bottom: 1rem;
+}
+.mb-2 {
+	margin-bottom: 2rem;
+}
+.mb-3 {
+	margin-bottom: 3rem;
+}
+.mb-4 {
+	margin-bottom: 4rem;
+}
+.mb-5 {
+	margin-bottom: 5rem;
+}
