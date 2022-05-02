@@ -1,0 +1,142 @@
+/*----------------------------------Search Bar-------------------------------------*/
+body{
+    position: relative;
+    margin: 0; 
+    padding: 0;
+    width: auto;
+    background-size: 100%;
+    background-origin: border-box;
+    background-color: white;
+}
+.searchbox{
+    position: fixed;
+    top: 3.56%;
+    left: 86%;
+    transform: translate(-50%,-50%);
+}
+.searchinput {
+    padding: 10px;
+    width: 29px;
+    height: 29px;
+    background: none;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family:Arial;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    transition: .5s;
+}
+.searchbox:hover input{
+    width: 250px;
+    background:  rgb(36, 36, 36);
+    border-radius: 10px;
+}
+i{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: .2s;
+}
+.searchbox:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+/*---------------------------------Store Links-------------------------------------*/
+.navhyperlinks{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type:none;
+    margin:0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    font-family:Arial;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.home-button{
+    width: auto;
+    height: auto;
+    border: 1px; border-style: solid; color: #ffffff;
+    font-size: 25px;
+}
+
+li{
+    float:  left;
+    padding: 5px 5px;
+}
+li a{
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+li a:hover{
+    background-color: rgb(36, 36, 36);
+}
+.sale{
+    position:sticky;
+    background-color: black;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 100px 500px 400px;
+    padding:0px;
+    font-size: 40px;
+    font-family:Arial;
+}
+
+
+/*-----------------------------Footer---------------------------------*/
+
+/* GR: Not sure sure if you want me to delete or not*/
+/*footer{
+    position: fixed;
+    top: 0;
+    padding-bottom: 30px;
+    float: initial;
+    text-align: center;
+    width: 100%;
+    margin-top:55%;
+    background-color: rgb(0, 0, 0);
+    font-family:monospace;
+    font-size: 15px;
+    color: #ffffff;
+    
+}*/
+.footer {
+    position: relative;   /* GR: Just adjust the footers style*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.text-in-bottomNav {
+    display: inline;        /* GR: For adjusting the text in footer*/
+    word-spacing: 140px;
+    font-family:Arial;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* GR: Addded to match theme of top navigation */
+span{
+    padding: 5px 5px;    
+}
+
+span a{
+    color: #FFFFFF;
+}
+
+span a:hover{
+    background-color: rgb(36, 36, 36);
+}
